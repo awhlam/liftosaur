@@ -46,7 +46,7 @@ t1: Front Squat / 4x3, 1x3+ / 5x2, 1x2+ / 9x1, 1x1+ / 1x5 (5RM Test) / 53.5kg / 
 // There's the RM calculator there to help find it out if you don't know it
 
 // ! **T2**.
-t2: Bench Press / 3x10 / 3x8 / 3x6 / 110lb / progress: custom(stage1weight: 0lb, increase: 5lb, stage3increase: 10lb) {~
+t2: Bench Press / 3x10 / 3x8 / 3x6 / 110lb 120s / progress: custom(stage1weight: 0lb, increase: 5lb, stage3increase: 10lb) {~
   if (descriptionIndex == 1) {
     descriptionIndex = 2
   }
@@ -64,7 +64,7 @@ t2: Bench Press / 3x10 / 3x8 / 3x6 / 110lb / progress: custom(stage1weight: 0lb,
 ~}
 
 // **T3**.
-t3: Lat Pulldown / 2x15, 1x15+ / 70lb 90s / warmup: none / progress: custom() {~
+t3: Lat Pulldown / 2x15, 1x15+ / 70lb 60s / warmup: none / progress: custom() {~
   if (completedReps[ns] >= 25) {
     weights = completedWeights[ns] + 5lb
   }
