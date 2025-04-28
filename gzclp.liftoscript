@@ -22,7 +22,7 @@
 // * Repeat, when the bar starts to get heavy, make smaller jumps.
 // * When you finally get to a set that is hard, but you do it - take that number, long press **5RM Test** set, and set the weight you did
 // * Tap on the "New 5RM" set to mark it completed
-t1: Squat / 4x3, 1x3+ / 5x2, 1x2+ / 9x1, 1x1+ / 1x5 (5RM Test) / 53.5kg / progress: custom(increase: 10lb) {~
+t1: Front Squat, Barbell / 4x3, 1x3+ / 5x2, 1x2+ / 9x1, 1x1+ / 1x5 (5RM Test) / 53.5kg / progress: custom(increase: 10lb) {~
   if (descriptionIndex == 1) {
     descriptionIndex = 2
   }
@@ -84,7 +84,7 @@ t3: Lat Pulldown / 2x15, 1x15+ / 70lb 90s / progress: custom() {~
 // * Repeat, when the bar starts to get heavy, make smaller jumps.
 // * When you finally get to a set that is hard, but you do it - take that number, long press **5RM Test** set, and set the weight you did
 // * Tap on the "New 5RM" set to mark it completed
-t1: Overhead Press / 4x3, 1x3+ / 5x2, 1x2+ / 9x1, 1x1+ / 1x5 (5RM Test) / 100lb / progress: custom(increase: 5lb) { ...t1: Squat }
+t1: Overhead Press / 4x3, 1x3+ / 5x2, 1x2+ / 9x1, 1x1+ / 1x5 (5RM Test) / 100lb / progress: custom(increase: 5lb) { ...t1: Front Squat, Barbell }
 
 // **T2**. Start with **65% of 5RM**.
 // You can adjust your 1RM by clicking the **edit** icon, and setting the **1 Rep Max** value.
@@ -110,7 +110,7 @@ t3: Bent Over Row / ...t3: Lat Pulldown[1] / 65lb
 // * Repeat, when the bar starts to get heavy, make smaller jumps.
 // * When you finally get to a set that is hard, but you do it - take that number, long press **5RM Test** set, and set the weight you did
 // * Tap on the "New 5RM" set to mark it completed
-t1: Bench Press / 4x3, 1x3+ / 5x2, 1x2+ / 9x1, 1x1+ / 1x5 (5RM Test) / 160lb / progress: custom(increase: 5lb) { ...t1: Squat }
+t1: Bench Press / 4x3, 1x3+ / 5x2, 1x2+ / 9x1, 1x1+ / 1x5 (5RM Test) / 160lb / progress: custom(increase: 5lb) { ...t1: Front Squat, Barbell }
 
 // **T2**. Start with **65% of 5RM**.
 // You can adjust your 1RM by clicking the **edit** icon, and setting the **1 Rep Max** value.
@@ -136,7 +136,7 @@ t3: Lat Pulldown / ...t3: Lat Pulldown[1]
 // * Repeat, when the bar starts to get heavy, make smaller jumps.
 // * When you finally get to a set that is hard, but you do it - take that number, long press **5RM Test** set, and set the weight you did
 // * Tap on the "New 5RM" set to mark it completed
-t1: Deadlift / 4x3, 1x3+ / 5x2, 1x2+ / 9x1, 1x1+ / 1x5 (5RM Test) / 67.5kg / progress: custom(increase: 5lb) { ...t1: Squat }
+t1: Deadlift / 4x3, 1x3+ / 5x2, 1x2+ / 9x1, 1x1+ / 1x5 (5RM Test) / 67.5kg / progress: custom(increase: 5lb) { ...t1: Front Squat, Barbell }
 
 // **T2**. Start with **65% of 5RM**.
 // You can adjust your 1RM by clicking the **edit** icon, and setting the **1 Rep Max** value.
