@@ -22,7 +22,7 @@
 // * Repeat, when the bar starts to get heavy, make smaller jumps.
 // * When you finally get to a set that is hard, but you do it - take that number, long press **5RM Test** set, and set the weight you did
 // * Tap on the "New 5RM" set to mark it completed
-t1: Front Squat, Barbell / 4x3 53.5kg, 1x3+ 53.5kg / 5x2 53.5kg, 1x2+ 53.5kg / 9x1 53.5kg, 1x1+ 53.5kg / 1x5 53.5kg (5RM Test) / progress: custom(increase: 10lb) {~
+t1: Front Squat / 4x3, 1x3+ / 5x2, 1x2+ / 9x1, 1x1+ / 1x5 (5RM Test) / 53.5kg / progress: custom(increase: 10lb) {~
   if (descriptionIndex == 1) {
     descriptionIndex = 2
   }
@@ -46,7 +46,7 @@ t1: Front Squat, Barbell / 4x3 53.5kg, 1x3+ 53.5kg / 5x2 53.5kg, 1x2+ 53.5kg / 9
 // There's the RM calculator there to help find it out if you don't know it
 
 // ! **T2**.
-t2: Bench Press / 3x10 110lb / 3x8 110lb / 3x6 110lb / progress: custom(stage1weight: 0lb, increase: 5lb, stage3increase: 10lb) {~
+t2: Bench Press / 3x10 / 3x8 / 3x6 / 110lb / progress: custom(stage1weight: 0lb, increase: 5lb, stage3increase: 10lb) {~
   if (descriptionIndex == 1) {
     descriptionIndex = 2
   }
@@ -64,7 +64,7 @@ t2: Bench Press / 3x10 110lb / 3x8 110lb / 3x6 110lb / progress: custom(stage1we
 ~}
 
 // **T3**.
-t3: Lat Pulldown / 2x15 70lb 90s, 1x15+ 70lb 90s / warmup: none / progress: custom() {~
+t3: Lat Pulldown / 2x15, 1x15+ / 70lb 90s / warmup: none / progress: custom() {~
   if (completedReps[ns] >= 25) {
     weights = completedWeights[ns] + 5lb
   }
@@ -84,17 +84,17 @@ t3: Lat Pulldown / 2x15 70lb 90s, 1x15+ 70lb 90s / warmup: none / progress: cust
 // * Repeat, when the bar starts to get heavy, make smaller jumps.
 // * When you finally get to a set that is hard, but you do it - take that number, long press **5RM Test** set, and set the weight you did
 // * Tap on the "New 5RM" set to mark it completed
-t1: Overhead Press / 4x3 100lb, 1x3+ 100lb / 5x2 100lb, 1x2+ 100lb / 9x1 100lb, 1x1+ 100lb / 1x5 100lb (5RM Test) / progress: custom(increase: 5lb) { ...t1: Front Squat }
+t1: Overhead Press / 4x3, 1x3+ / 5x2, 1x2+ / 9x1, 1x1+ / 1x5 (5RM Test) / 100lb / progress: custom(increase: 5lb) { ...t1: Front Squat }
 
 // **T2**. Start with **65% of 5RM**.
 // You can adjust your 1RM by clicking the **edit** icon, and setting the **1 Rep Max** value.
 // There's the RM calculator there to help find it out if you don't know it
 
 // ! **T2**.
-t2: Deadlift / 3x10 140lb / ! 3x8 140lb / 3x6 140lb / progress: custom(stage1weight: 60kg, increase: 10lb, stage3increase: 15lb) { ...t2: Bench Press }
+t2: Deadlift / 3x10 / ! 3x8 / 3x6 / 140lb / progress: custom(stage1weight: 60kg, increase: 10lb, stage3increase: 15lb) { ...t2: Bench Press }
 
 // ...t3: Lat Pulldown[1]
-t3: Bent Over Row / ...t3: Lat Pulldown[1] / 65lb / progress: custom() { ...t3: Lat Pulldown }
+t3: Bent Over Row / ...t3: Lat Pulldown[1] / 65lb
 /// t3: Bicep Curl / ...t3: Lat Pulldown[1] / progress: custom() { ...t3: Lat Pulldown }
 
 ## Day 3
@@ -110,17 +110,17 @@ t3: Bent Over Row / ...t3: Lat Pulldown[1] / 65lb / progress: custom() { ...t3: 
 // * Repeat, when the bar starts to get heavy, make smaller jumps.
 // * When you finally get to a set that is hard, but you do it - take that number, long press **5RM Test** set, and set the weight you did
 // * Tap on the "New 5RM" set to mark it completed
-t1: Bench Press / 4x3 160lb, 1x3+ 160lb / 5x2 160lb, 1x2+ 160lb / 9x1 160lb, 1x1+ 160lb / 1x5 160lb (5RM Test) / progress: custom(increase: 5lb) { ...t1: Front Squat }
+t1: Bench Press / 4x3, 1x3+ / 5x2, 1x2+ / 9x1, 1x1+ / 1x5 (5RM Test) / 160lb / progress: custom(increase: 5lb) { ...t1: Front Squat }
 
 // **T2**. Start with **65% of 5RM**.
 // You can adjust your 1RM by clicking the **edit** icon, and setting the **1 Rep Max** value.
 // There's the RM calculator there to help find it out if you don't know it
 
 // ! **T2**.
-t2: Squat / 3x10 41.5kg / 3x8 41.5kg / 3x6 41.5kg / progress: custom(increase: 10lb, stage3increase: 15lb) { ...t2: Bench Press }
+t2: Squat / 3x10 / 3x8 / 3x6 / 41.5kg / progress: custom(increase: 10lb, stage3increase: 15lb) { ...t2: Bench Press }
 
 // ...t3: Lat Pulldown[1]
-t3: Lat Pulldown / ...t3: Lat Pulldown[1]
+t3: Lat Pulldown / ...t3: Lat Pulldown[1] / warmup: none
 /// t3: Tricep Extension / ...t3: Lat Pulldown[1]
 
 ## Day 4
@@ -136,14 +136,14 @@ t3: Lat Pulldown / ...t3: Lat Pulldown[1]
 // * Repeat, when the bar starts to get heavy, make smaller jumps.
 // * When you finally get to a set that is hard, but you do it - take that number, long press **5RM Test** set, and set the weight you did
 // * Tap on the "New 5RM" set to mark it completed
-t1: Deadlift / 4x3 67.5kg, 1x3+ 67.5kg / 5x2 67.5kg, 1x2+ 67.5kg / 9x1 67.5kg, 1x1+ 67.5kg / 1x5 67.5kg (5RM Test) / progress: custom(increase: 5lb) { ...t1: Front Squat }
+t1: Deadlift / 4x3, 1x3+ / 5x2, 1x2+ / 9x1, 1x1+ / 1x5 (5RM Test) / 72.5kg / progress: custom(increase: 5lb) { ...t1: Front Squat }
 
 // **T2**. Start with **65% of 5RM**.
 // You can adjust your 1RM by clicking the **edit** icon, and setting the **1 Rep Max** value.
 // There's the RM calculator there to help find it out if you don't know it
 
 // ! **T2**.
-t2: Overhead Press / 3x10 36.5kg / ! 3x8 36.5kg / 3x6 36.5kg / progress: custom(stage1weight: 35kg) { ...t2: Bench Press }
+t2: Overhead Press / 3x10 / ! 3x8 / 3x6 / 85lb / progress: custom(stage1weight: 35kg) { ...t2: Bench Press }
 
 // ...t3: Lat Pulldown[1]
 t3: Bent Over Row / ...t3: Lat Pulldown[1] / 65lb
